@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
 import { contentData } from "../../store/contentData";
 const Banner = () => {
@@ -17,10 +17,14 @@ const Banner = () => {
         bulletClass: "swiper-pagination-bullet",
         bulletActiveClass: "swiper-pagination-bullet-active",
       }}
-      modules={[Pagination]}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false
+      }}
+      modules={[Pagination, Autoplay]}
       slideClass="swiper-slide"
       slideActiveClass="swiper-slide-active"
-      speed={1000}
+      speed={800}
     >
       {contentData.BannerImage.map((banner) => (
         <SwiperSlide key={banner}>
