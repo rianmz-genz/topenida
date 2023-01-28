@@ -59,7 +59,7 @@ const HomeSection: FC<SectionHomeProps> = ({ title, href, card }) => {
     <>
       <Container>
         <div className="w-full h-fit pb-3 mt-6">
-          <div className="w-full flex justify-between">
+          <div className="w-full flex justify-between px-4">
             <Text textStyle="Bold" value={title} />
             <TextLink
               textStyle="SmallBold"
