@@ -20,6 +20,7 @@ const Banner = () => {
       modules={[Pagination]}
       slideClass="swiper-slide"
       slideActiveClass="swiper-slide-active"
+      speed={1000}
     >
       {contentData.BannerImage.map((banner) => (
         <SwiperSlide key={banner}>

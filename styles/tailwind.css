@@ -6,10 +6,10 @@
     @apply py-2 px-4 relative !important;
   }
   .swiper-pagination {
-    @apply flex flex-row justify-end w-11/12 absolute bottom-5 left-0 !important;
+    @apply flex flex-row justify-end w-11/12 absolute bottom-7 mx-auto !important;
   }
   .swiper-pagination-bullet {
-    @apply bg-white w-4 h-2 -ml-1 mr-[0.51rem] rounded-lg !important;
+    @apply bg-white w-4 h-2 -ml-1 mr-[0.51rem] cursor-pointer rounded-lg !important;
   }
   .swiper-pagination-bullet-active {
     @apply bg-white w-7 rounded-lg h-2  !important;

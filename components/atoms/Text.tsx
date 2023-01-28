@@ -15,6 +15,8 @@ const Text = ({ value, textStyle, color }: TextProps) => {
         return "font-raleway text-lg font-semibold";
       case "Description":
         return "font-opensans text-sm leading-5 truncate";
+      case "Footer":
+        return "w-full flex justify-center text-sm";
     }
   };
   const getTextColor = (): string | undefined => {

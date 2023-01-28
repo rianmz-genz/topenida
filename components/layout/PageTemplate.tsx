@@ -17,7 +17,7 @@ const PageTemplate: FC<PageProps> = ({ children, title }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.svg" />
       </Head>
-      <main className="w-full h-full min-h-screen bg-background flex justify-center ">
+      <main className="w-full h-full min-h-screen bg-background flex justify-center pb-4">
         <section className="w-full max-w-[470px] bg-white min-h-screen h-fit">
           {children}
         </section>
