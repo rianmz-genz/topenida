@@ -40,26 +40,26 @@ const HomeSection: FC<SectionHomeProps> = ({ title, href, card }) => {
             />
           </SwiperSlide>
         ));
-        case "blog":
-          return contentData.blogs.map((blog) => (
-            <SwiperSlide key={blog.id}>
-              <HomeCard
-                card={card}
-                isBlog={true}
-                image={blog.image}
-                title={blog.title}
-                description={blog.postAt}
-                id={blog.id}
-              />
-            </SwiperSlide>
-          ));
+      case "blog":
+        return contentData.blogs.map((blog) => (
+          <SwiperSlide key={blog.id}>
+            <HomeCard
+              card={card}
+              isBlog={true}
+              image={blog.image}
+              title={blog.title}
+              description={blog.postAt}
+              id={blog.id}
+            />
+          </SwiperSlide>
+        ));
     }
   };
   return (
     <>
       <Container>
         <div className="w-full h-fit pb-3 mt-6">
-          <div className="w-full flex justify-between px-4">
+          <div className="w-full flex justify-between px-4 lg:px-0">
             <Text textStyle="Bold" value={title} />
             <TextLink
               textStyle="SmallBold"
