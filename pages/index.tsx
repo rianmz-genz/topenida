@@ -31,6 +31,9 @@ export default function Home() {
             <div className="w-full h-72 bg-slate-300 animate-pulse rounded-lg"></div>
             <div className="w-full h-72 bg-slate-300 animate-pulse rounded-lg"></div>
           </div>
+          <div className="mt-8 pt-2 px-4">
+            <div className="w-full bg-slate-300 h-56 animate-pulse rounded-lg"></div>
+          </div>
         </>
       ) : (
         <>
