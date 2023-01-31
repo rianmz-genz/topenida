@@ -3,6 +3,7 @@ import Container from "../layout/Container";
 import TextLink from "../atoms/TextLink";
 import Text from "../atoms/Text";
 import { IoPricetagOutline } from "react-icons/io5";
+import Image from "next/image";
 
 const TourCard: FC<TourCardProps> = ({
   id,
@@ -14,11 +15,14 @@ const TourCard: FC<TourCardProps> = ({
   return (
     <Container>
       <div className="w-full h-fit rounded-lg shadow-[0px_0px_35px_rgba(0,0,0,.07)] flex">
-        <div
-          style={{ backgroundImage: `url('${image}')` }}
-          className={`w-3/12 bg-cover bg-center bg-no-repeat rounded-tl-lg rounded-bl-lg`}
-        ></div>
-        <div className="pl-3 w-9/12 py-2 space-y-1">
+        <Image
+          src={image}
+          alt="tour image"
+          width={100}
+          height={100}
+          className="w-4/12 h-32 object-cover rounded-bl-lg rounded-tl-lg"
+        />
+        <div className="pl-3 w-8/12 py-2 space-y-1">
           <TextLink
             textStyle="HeadingTwo"
             value={title}

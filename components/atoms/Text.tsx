@@ -17,6 +17,8 @@ const Text = ({ value, textStyle, color }: TextProps) => {
         return "font-opensans text-sm leading-5 truncate";
       case "DescriptionTourCard":
         return "font-opensans text-sm leading-5";
+      case "DescriptionDetail":
+        return "font-opensans text-sm leading-6"
       case "DescriptionBlog":
         return "font-opensans text-sm leading-5 h-36 overflow-hidden";
       case "Footer":

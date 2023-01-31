@@ -8,58 +8,114 @@ export const contentData: contentDataType = {
       ],
     tours: [
         {
-            id: 1,   
+            id: '1',   
             title: "Penida Full Day Tour",
             description: "Full 8 Hours to Monkey Forest, Elephant Cave, Spring Temple",
+            longDesc: "Ubud is one of those places where a holiday of a few days can easily turn into a stay of weeks, months or even years. The size of the town’s expat community attests to this, and so do the many novels and films that have been set here, creative responses to the seductive nature of this most cultured of all Balinese towns.",
             pay: 200000,
-            image: "/images/bali1.svg"
+            image: "/images/bali1.svg",
+            iternary: [
+                {
+                    title: "Monkey Forest",
+                    description: "Monkey Forest is a nature reserve and temple complex in Ubud, Bali. It houses approximately 340 monkeys",
+                },
+                {
+                    title: "Elephant Cave",
+                    description: "Goa Gajah, or Elephant Cave, is located on the island of Bali near Ubud, in Indonesia. Built in the 9th century, it served as a sanctuary.",
+                },
+                {
+                    title: "Spring Temple",
+                    description: "The Tirta Empul Holy Water Temple is located in the village of Manukaya, near the town of Tampaksiring, not far from Ubud. The temple compound consists of a petirtaan or bathing structure, famous for its holy spring water, where Balinese Hindus go to for ritual purification.",
+                },
+            ],
+            include: ["Air Conditioner Car","Petrol", "Driver", "Mineral Water","Fruit"],
+            exclude: ["Tipping", "Other Personal Expenses"]
         },
         {
-            id: 2,
+            id: '2',
             title: "Bali Safari & Marine Park",
             description: "8 Hours to Bali Safari, the African Safari Adventure in Bali",
             pay: 80000,
-            image: "/images/bali2.svg"
+            image: "/images/bali2.svg",
+            justDesc: ["Bali Safari, the African Safari Adventure in Bali, is home to over a thousand amazing animals and your finest destination for an adventurous, fun and educational experience more than just a safari.", "Our park represents more than 120 species, including rare & endangered species like the Komodo Dragons, Orangutan, Bali Starling bird, and many more.","At this time Bali Safari Park is the front line of wildlife conservation in Indonesia. We have been actively involved in ensuring the future survival and well-being of many Indonesian animal species."],
+            include: ["English/korea Speaking Driver as Guide", "Hotel Pick up and drop Off", "Car + AC & Petrol", "Include Mineral Water", "Minimum 2 Pax", "Tour Duration 8-10 Hours ( Untuk Yang Full Day )", "Selain Full Day Tour Duration 6 Hours"],
+            exclude: ["Tipping", "Other Personal Expenses"],
         },
         {
-            id: 3,
+            id: '3',
             title: "Swing and Ubud Tour",
             description: "If you wanna be captured at a high, then Bali Swing is the place to be at. Bali Swing houses numerous jungle swings ranging from 10m, to 78m above the ground.",
             pay: 90000,
-            image: "/images/bali3.svg"
+            image: "/images/bali3.svg",
+            iternary: [
+                {
+                    title: "Swing",
+                    description: "If you wanna be captured at a high, then Bali Swing is the place to be at. Bali Swing houses numerous jungle swings ranging from 10m, to 78m above the ground.",
+                },
+                {
+                    title: "Ubud Palace",
+                    description: "The Ubud Palace, officially Puri Saren Agung, is a historical building complex situated in Ubud, Gianyar Regency of Bali, Indonesia. Gate of Ubud Palace.",
+                },
+                {
+                    title: "Saraswati Temple",
+                    description: "Saraswati temple Kingdom of Ubud is dedicated to honor the Hindu Goddess Saraswati, the goddess of learning, literature and ar",
+                },
+            ],
+            include: ["English/korea Speaking Driver as Guide","Hotel Pick up and drop Off", "Include Mineral Water", "Minimum 2 pax", "Tour Duration 8-10 Hours ( untuk yang full day )", "Selain Full Day tour Duration 6 Hours"],
+            exclude: ["Tipping", "Other Personal Expenses", "Minimum 2 pax"],
         },
         {
-            id: 4,
+            id: '4',
             title: "Kintamani Fulcano Tours",
             description: "Batur Temple, Volcano, Lake Batur, Penglipuran Traditional Village",
             pay: 100000,
-            image: "/images/bali4.svg"
+            image: "/images/bali4.svg",
+            iternary: [
+                {
+                    title: "Batur Temple",
+                    description: "Pura Ulun Danu Batur, a temple dedicated to the goddess of the lake -Ida Batari Dewi Ulun Danu on the edge of a huge crater.",
+                },
+                {
+                    title: "Volcano",
+                    description: "Mount Batur Bali is an active volcano and considered to be one of Hinduism’s most sacred mountains.",
+                },
+                {
+                    title: "Lake Batur",
+                    description: "Lake Batur is a volcanic crater lake in Kintamani, Bali, Bangli Regency of Bali, located about 30 km (19 mi) northeast of Ubud in Bali.",
+                },
+                {
+                    title: "Penglipuran Traditional Village.",
+                    description: "Penglipuran is a traditional village located in Bangli Regency, is about 45 km from the city of Denpasar, quite popular as a tourist attraction.",
+                },
+            ],
+            include: ["Air Conditioner Car","Petrol", "Driver", "Mineral Water","Fruit"],
+            exclude: ["Tipping", "Other Personal Expenses"],
         },
     ],
     explore: [
         {
-            id: 1,
+            id: '1',
             title: "Explore Balinese Culture",
             description: "Batur Temple, Volcano, Lake Batur, Penglipuran Traditional Village",
             pay: 90000,
             image: "/images/explore1.svg"
         },
         {
-            id: 2,
+            id: '2',
             title: "Kecak Dance Uluwatu Half Day",
             description: "Batur Temple, Volcano, Lake Batur, Penglipuran Traditional Village",
             pay: 100000,
             image: "/images/explore2.svg"
         },
         {
-            id: 3,
+            id: '3',
             title: "Explore Balinese Culture Full Day",
             description: "Full 8 Hours to Monkey Forest, Elephant Cave, Spring Temple",
             pay: 120000,
             image: "/images/explore3.svg"
         },
         {
-            id: 4,
+            id: '4',
             title: "Bali Wild Life Half Day Tour",
             description: "Full 8 Hours to Monkey Forest, Elephant Cave, Spring Temple",
             pay: 110000,

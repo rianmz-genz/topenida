@@ -14,8 +14,8 @@ const HomeCard = ({
   isBlog = false,
 }: HomeCardType) => {
   const router = useRouter();
-  const handleClick = (id: number) => {
-    router.push(`/${card}/${id}`);
+  const handleClick = (id: string) => {
+    router.push(`/${card}/detail/${id}`);
   };
   return (
     <div

@@ -10,6 +10,7 @@ interface TextProps {
       | "Description"
       | "DescriptionTourCard"
       | "DescriptionBlog"
+      | "DescriptionDetail"
       | "Footer"
 }
 interface TextLinkProps {
@@ -37,11 +38,21 @@ interface NavLinkProps{
     children: ReactNode
 }
 
-interface HomeCardType{
-    id: number
+interface Iternary{
     title: string
     description: string
+}
+
+interface HomeCardType{
+    id: string
+    title: string
+    description: string
+    longDesc?: string
+    iternary?: Iternary[]
+    justDesc?: string[]
     pay?: number
+    include?: string[]
+    exclude?: string[]
     image: string
     card?: | "tour" | "explore" | "blog"
     isBlog?: boolean
