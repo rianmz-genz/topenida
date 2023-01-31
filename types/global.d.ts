@@ -8,6 +8,8 @@ interface TextProps {
       | "SmallBold"
       | "Bold"
       | "Description"
+      | "DescriptionTourCard"
+      | "DescriptionBlog"
       | "Footer"
 }
 interface TextLinkProps {
@@ -67,4 +69,20 @@ interface SectionHomeProps{
     title: string
     href: string
     card: | "tour" | "explore" | "blog"
+}
+
+interface TourCardProps{
+    id: number
+    title: string
+    description: string
+    pay?: number
+    image: string
+}
+interface FooterProps{
+    value: string
+}
+
+interface TourSectionProps{
+    title: string
+    section: "Tour" | "Explore"
 }

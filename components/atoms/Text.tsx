@@ -15,6 +15,10 @@ const Text = ({ value, textStyle, color }: TextProps) => {
         return "font-raleway text-lg font-semibold";
       case "Description":
         return "font-opensans text-sm leading-5 truncate";
+      case "DescriptionTourCard":
+        return "font-opensans text-sm leading-5";
+      case "DescriptionBlog":
+        return "font-opensans text-sm leading-5 h-36 overflow-hidden";
       case "Footer":
         return "w-full flex justify-center text-sm";
     }

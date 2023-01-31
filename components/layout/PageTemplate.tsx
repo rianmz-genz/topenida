@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React, { FC, ReactNode } from "react";
 import Navbar from "../organisms/Navbar";
+import Footer from "../organisms/Footer";
 
 const PageTemplate: FC<PageProps> = ({ children, title }) => {
   return (
@@ -16,13 +17,15 @@ const PageTemplate: FC<PageProps> = ({ children, title }) => {
         <link rel="icon" href="/images/favicon.svg" />
       </Head>
       <main className="w-full h-full min-h-screen bg-background flex justify-center pb-4">
-        <section className="w-full max-w-[470px] bg-white min-h-screen h-fit">
+        <div className="w-full max-w-[470px] bg-white min-h-screen h-fit">
           {/* navbar */}
           <Navbar />
           <div className="w-full h-16"></div>
           {children}
-        </section>
+        </div>
       </main>
+      {/* footer */}
+      <Footer value="Copyright &#169; 2023 - Develop By Adrian" />
     </>
   );
 };
