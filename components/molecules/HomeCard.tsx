@@ -3,6 +3,7 @@ import React from "react";
 import Text from "../atoms/Text";
 import { IoPricetagOutline } from "react-icons/io5";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const HomeCard = ({
   image,
@@ -14,12 +15,12 @@ const HomeCard = ({
   isBlog = false,
 }: HomeCardType) => {
   const router = useRouter();
-  const handleClick = (id: string) => {
-    router.push(`/${card}/detail/${id}`);
-  };
+  // const handleClick = (id: string) => {
+  //   router.push(`/${card}/detail/${id}`);
+  // };
   return (
-    <div
-      onClick={() => handleClick(id)}
+    <Link
+      href={`${card}/detail/${id}`}
       className="w-full cursor-pointer rounded-bl-lg rounded-br-lg h-fit bg-white shadow-[5px_5px_25px_rgba(0,0,0,.06)]"
     >
       <Image
@@ -42,7 +43,7 @@ const HomeCard = ({
           />
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
