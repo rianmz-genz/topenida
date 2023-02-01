@@ -60,7 +60,7 @@ interface HomeCardType{
 
 interface Blog{
     image: string
-    id: number
+    id: string
     title: string
     description: string
     postAt: string
@@ -83,7 +83,7 @@ interface SectionHomeProps{
 }
 
 interface TourCardProps{
-    id: number
+    id: string
     title: string
     description: string
     pay?: number

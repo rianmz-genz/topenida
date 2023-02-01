@@ -7,7 +7,7 @@ import TextLink from "../../components/atoms/TextLink";
 import { contentData } from "../../store/contentData";
 import BlogCard from "../../components/molecules/BlogCard";
 
-const index = () => {
+const Index = () => {
   return (
     <PageTemplate title="Blogs">
       <LineDivider />
@@ -26,4 +26,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

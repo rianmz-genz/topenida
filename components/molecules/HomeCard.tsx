@@ -20,7 +20,7 @@ const HomeCard = ({
   return (
     <div
       onClick={() => handleClick(id)}
-      className="w-full cursor-pointer rounded-bl-lg rounded-br-lg h-fit bg-white shadow-[5px_5px_25px_rgba(0,0,0,.07)]"
+      className="w-full cursor-pointer rounded-bl-lg rounded-br-lg h-fit bg-white shadow-[5px_5px_25px_rgba(0,0,0,.06)]"
     >
       <Image
         className="w-full rounded-tl-lg rounded-tr-lg"

@@ -3,7 +3,7 @@ import PageTemplate from "../../components/layout/PageTemplate";
 import TourSection from "../../components/organisms/TourSection";
 import TourSkeleton from "../../components/organisms/TourSkeleton";
 
-const index = () => {
+const Index = () => {
   const [isSkeleton, setIsSkeleton] = useState<boolean>(true);
   useEffect(() => {
     setTimeout(() => {
@@ -27,4 +27,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -4,7 +4,7 @@ import TourSection from "../../components/organisms/TourSection";
 import { useState } from "react";
 import TourSkeleton from "../../components/organisms/TourSkeleton";
 
-const index = () => {
+const Index = () => {
   const [isSkeleton, setIsSkeleton] = useState<boolean>(true);
   useEffect(() => {
     setTimeout(() => {
@@ -25,4 +25,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
