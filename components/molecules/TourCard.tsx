@@ -28,7 +28,7 @@ const TourCard: FC<TourCardProps> = ({
             value={title}
             href={`/tour/detail/${id}`}
           />
-          <Text textStyle="DescriptionTourCard" value={description} />
+          <Text textStyle="DescriptionBlogCard" value={description} />
           <div className={`flex items-center space-x-2`}>
             <Text textStyle="Bold" value={<IoPricetagOutline />} />
             <Text

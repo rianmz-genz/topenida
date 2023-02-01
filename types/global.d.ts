@@ -11,6 +11,7 @@ interface TextProps {
       | "DescriptionTourCard"
       | "DescriptionBlog"
       | "DescriptionDetail"
+      | "DescriptionBlogCard"
       | "Footer"
 }
 interface TextLinkProps {

@@ -18,7 +18,7 @@ const BlogCard: FC<Blog> = ({id,image, title, description, postAt, author}) => {
         <Text textStyle="SmallBold" value="General Information" />
       </div>
       <div className="space-y-1 mb-4">
-        <Text textStyle="HeadingOne" value={title} color="Gray" />
+        <TextLink href={`/blog/detail/${id}`} textStyle="HeadingOne" value={title} color="Gray" />
         <Text
           textStyle="DescriptionTourCard"
           value={`${postAt} - ${author}`}
@@ -30,7 +30,7 @@ const BlogCard: FC<Blog> = ({id,image, title, description, postAt, author}) => {
         <TextLink
           textStyle="Description"
           value="Read More ->"
-          href="/blog/"
+          href={`/blog/detail${id}`}
           color="Blue"
         />
       </div>

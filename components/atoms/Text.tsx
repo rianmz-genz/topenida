@@ -8,7 +8,7 @@ const Text = ({ value, textStyle, color }: TextProps) => {
       case "HeadingTwo":
         return "font-raleway text-xl font-semibold";
       case "Bold":
-        return "font-raleway font-semibold truncate";
+        return "font-raleway font-semibold";
       case "SmallBold":
         return "font-raleway text-sm font-semibold";
       case "SubTitle":
@@ -21,6 +21,8 @@ const Text = ({ value, textStyle, color }: TextProps) => {
         return "font-opensans text-sm leading-6"
       case "DescriptionBlog":
         return "font-opensans text-sm leading-5 h-36 overflow-hidden";
+      case "DescriptionBlogCard":
+        return "font-opensans text-sm leading-5 truncate";
       case "Footer":
         return "w-full flex justify-center text-sm";
     }

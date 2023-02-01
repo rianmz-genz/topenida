@@ -1,9 +1,6 @@
 import React from "react";
 import PageTemplate from "../../components/layout/PageTemplate";
 import LineDivider from "../../components/atoms/LineDivider";
-import Image from "next/image";
-import Text from "../../components/atoms/Text";
-import TextLink from "../../components/atoms/TextLink";
 import { contentData } from "../../store/contentData";
 import BlogCard from "../../components/molecules/BlogCard";
 

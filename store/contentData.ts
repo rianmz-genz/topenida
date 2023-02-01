@@ -9,7 +9,7 @@ export const contentData: contentDataType = {
     tours: [
         {
             id: '1',   
-            title: "Penida Full Day Tour",
+            title: "Penida Full Day Tour with Adrian",
             description: "Full 8 Hours to Monkey Forest, Elephant Cave, Spring Temple",
             longDesc: "Ubud is one of those places where a holiday of a few days can easily turn into a stay of weeks, months or even years. The size of the town’s expat community attests to this, and so do the many novels and films that have been set here, creative responses to the seductive nature of this most cultured of all Balinese towns.",
             pay: 200000,
@@ -43,7 +43,7 @@ export const contentData: contentDataType = {
         },
         {
             id: '3',
-            title: "Swing and Ubud Tour",
+            title: "Swing and Ubud Tour at the sunset time",
             description: "If you wanna be captured at a high, then Bali Swing is the place to be at. Bali Swing houses numerous jungle swings ranging from 10m, to 78m above the ground.",
             pay: 90000,
             image: "/images/bali3.svg",
@@ -98,28 +98,92 @@ export const contentData: contentDataType = {
             title: "Explore Balinese Culture",
             description: "Batur Temple, Volcano, Lake Batur, Penglipuran Traditional Village",
             pay: 90000,
-            image: "/images/explore1.svg"
+            image: "/images/explore1.svg",
+            iternary: [
+                {
+                    title: "Monkey Forest",
+                    description: "Monkey Forest is a nature reserve and temple complex in Ubud, Bali. It houses approximately 340 monkeys",
+                },
+                {
+                    title: "Elephant Cave",
+                    description: "Goa Gajah, or Elephant Cave, is located on the island of Bali near Ubud, in Indonesia. Built in the 9th century, it served as a sanctuary.",
+                },
+                {
+                    title: "Spring Temple",
+                    description: "The Tirta Empul Holy Water Temple is located in the village of Manukaya, near the town of Tampaksiring, not far from Ubud. The temple compound consists of a petirtaan or bathing structure, famous for its holy spring water, where Balinese Hindus go to for ritual purification.",
+                },
+            ],
+            include: ["Air Conditioner Car","Petrol", "Driver", "Mineral Water","Fruit"],
+            exclude: ["Tipping", "Other Personal Expenses"]
         },
         {
             id: '2',
             title: "Kecak Dance Uluwatu Half Day",
             description: "Batur Temple, Volcano, Lake Batur, Penglipuran Traditional Village",
             pay: 100000,
-            image: "/images/explore2.svg"
+            image: "/images/explore2.svg",
+            iternary: [
+                {
+                    title: "Monkey Forest",
+                    description: "Monkey Forest is a nature reserve and temple complex in Ubud, Bali. It houses approximately 340 monkeys",
+                },
+                {
+                    title: "Elephant Cave",
+                    description: "Goa Gajah, or Elephant Cave, is located on the island of Bali near Ubud, in Indonesia. Built in the 9th century, it served as a sanctuary.",
+                },
+                {
+                    title: "Spring Temple",
+                    description: "The Tirta Empul Holy Water Temple is located in the village of Manukaya, near the town of Tampaksiring, not far from Ubud. The temple compound consists of a petirtaan or bathing structure, famous for its holy spring water, where Balinese Hindus go to for ritual purification.",
+                },
+            ],
+            include: ["Air Conditioner Car","Petrol", "Driver", "Mineral Water","Fruit"],
+            exclude: ["Tipping", "Other Personal Expenses"]
         },
         {
             id: '3',
             title: "Explore Balinese Culture Full Day",
             description: "Full 8 Hours to Monkey Forest, Elephant Cave, Spring Temple",
             pay: 120000,
-            image: "/images/explore3.svg"
+            image: "/images/explore3.svg",
+            iternary: [
+                {
+                    title: "Monkey Forest",
+                    description: "Monkey Forest is a nature reserve and temple complex in Ubud, Bali. It houses approximately 340 monkeys",
+                },
+                {
+                    title: "Elephant Cave",
+                    description: "Goa Gajah, or Elephant Cave, is located on the island of Bali near Ubud, in Indonesia. Built in the 9th century, it served as a sanctuary.",
+                },
+                {
+                    title: "Spring Temple",
+                    description: "The Tirta Empul Holy Water Temple is located in the village of Manukaya, near the town of Tampaksiring, not far from Ubud. The temple compound consists of a petirtaan or bathing structure, famous for its holy spring water, where Balinese Hindus go to for ritual purification.",
+                },
+            ],
+            include: ["Air Conditioner Car","Petrol", "Driver", "Mineral Water","Fruit"],
+            exclude: ["Tipping", "Other Personal Expenses"]
         },
         {
             id: '4',
             title: "Bali Wild Life Half Day Tour",
             description: "Full 8 Hours to Monkey Forest, Elephant Cave, Spring Temple",
             pay: 110000,
-            image: "/images/explore4.svg"
+            image: "/images/explore4.svg",
+            iternary: [
+                {
+                    title: "Monkey Forest",
+                    description: "Monkey Forest is a nature reserve and temple complex in Ubud, Bali. It houses approximately 340 monkeys",
+                },
+                {
+                    title: "Elephant Cave",
+                    description: "Goa Gajah, or Elephant Cave, is located on the island of Bali near Ubud, in Indonesia. Built in the 9th century, it served as a sanctuary.",
+                },
+                {
+                    title: "Spring Temple",
+                    description: "The Tirta Empul Holy Water Temple is located in the village of Manukaya, near the town of Tampaksiring, not far from Ubud. The temple compound consists of a petirtaan or bathing structure, famous for its holy spring water, where Balinese Hindus go to for ritual purification.",
+                },
+            ],
+            include: ["Air Conditioner Car","Petrol", "Driver", "Mineral Water","Fruit"],
+            exclude: ["Tipping", "Other Personal Expenses"]
         },
     ],
     blogs: [
@@ -134,7 +198,7 @@ export const contentData: contentDataType = {
         {
             id: '2',
             image: "/images/blog2.svg",
-            title: "Best Restaurants in Nusa Lembongan",
+            title: "Best Restaurants in Nusa Lembongan Bali Pride",
             description: "If you are looking to escape from the hustle and bustle of Bali, just a short ferry ride away you will find the beautiful island of Nusa Lembongan – offering the perfect combination of white sands, crystal-clear waters and laid-back island vibes. With a variety of dining options to suit all budgets, here is our selection of some of the best restaurants to check-out during your stay: Tigerlillys Beach Shack Delightfully located on a secluded section of popular Jungut Batu Beach and just a few minutes from Tigerlilly’s main restaurant and boutique hotel, you’ll find Tigerlilly’s Beach Shack. Welcoming diners from 8am onwards for breakfast, lunch and dinner, relax underneath the inviting umbrellas and shady palm trees, take-in the golden sands and rolling waves in this vibrant family-friendly space. Serving all of your Tigerlilly’s favourite dishes – including a wide variety of vegetarian and vegan-friendly bites – this laidback spot has plenty to entertain with their fast free Wifi, children’s playground, live music and regular movie nights. And with a beach BBQ every Sunday – what better way to finish your week than enjoying a Happy Hour cocktail with friends as you watch the sun setting on another day in paradise. Tigerlillys Perfectly located on the main Lembongan road, this hidden popular spot is the ideal setting to enjoy brunch, lunch and dinner as you relax in their laidback cosy oasis. Part of their much loved boutique hotel, Tigerlilys restaurant is open to all island visitors and is one Lembongan spot where you are always guaranteed great food and a great time! With an extensive range of Asian fusion cuisine, fuel yourself up for a day in the sun with favourites such as fruity smoothie bowls, hearty egg & bacon muffins, or go large with their Big Breakfast served with all the trimmings. Tigerlilys also offers plenty of vegetarian and vegan options on their menu as well. Their trained baristas on hand to serve-up that perfect morning coffee fix, as well as a tempting selection of cold-pressed juices, soft drinks and smoothies. There is also a variety of cocktails on offer for you to enjoy as you sit back and lap-up those paradise island vibes – bliss!",
             postAt: "January 1, 2023",
             author: "Adrian",

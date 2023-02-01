@@ -22,7 +22,7 @@ const DetailTour = () => {
     }, 1000);
   }, []);
   useEffect(() => {
-    const p = contentData.tours.find((x) => x.id == id);
+    const p = contentData.explore.find((x) => x.id == id);
     setEmployee({ ...p });
   }, [router.isReady]);
   return (
